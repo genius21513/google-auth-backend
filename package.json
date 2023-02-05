@@ -3,7 +3,7 @@
   "version": "1.0.0",  
   "license": "MIT",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node app.js"
   },
   "dependencies": {
     "cookie-session": "^2.0.0",
