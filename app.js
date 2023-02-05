@@ -42,8 +42,8 @@ app.get('/auth/callback/failure', (req, res) => {
     res.send("Error");
 })
 
-// app.listen(4000, () => {
-//     console.log("Server Running on port 4000");
-// });
+app.listen(4000, () => {
+    console.log("Server Running on port 4000");
+});
 
-module.exports = app;
+// module.exports = app;
