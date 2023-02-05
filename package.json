@@ -1,10 +1,9 @@
 {
   "name": "google-auth-backend",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "1.0.0",  
   "license": "MIT",
   "scripts": {
-    "start": "node index.js"
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "cookie-session": "^2.0.0",
