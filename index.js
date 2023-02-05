@@ -42,6 +42,6 @@ app.get('/auth/callback/failure', (req, res) => {
     res.send("Error");
 })
 
-app.listen(3000, () => {
+app.listen(80, () => {
     console.log("Server Running on port 4000");
 });
