@@ -6,7 +6,7 @@ require('./passport');
 
 app.use(cookieSession({
     name: 'google-auth-session',
-    keys: ['key1', 'key2']
+    keys: ['secret']
 }));
 
 app.use(passport.initialize());
@@ -34,7 +34,7 @@ app.get('/auth/callback',
 app.get('/auth/callback/success', (req, res) => {
     if (!req.user)
         res.redirect('/auth/callback/failure');
-    res.send("Welcome " + req.user.email);
+    res.send("Welcome " + req.user.email + '<br/><button><a href="/logout">Logout</a></button>');
 });
 
 // failure
@@ -42,8 +42,8 @@ app.get('/auth/callback/failure', (req, res) => {
     res.send("Error");
 })
 
-app.listen(4000, () => {
-    console.log("Server Running on port 4000");
+app.listen(3000, () => {
+    console.log("Server Running on port 3000");
 });
 
 // module.exports = app;

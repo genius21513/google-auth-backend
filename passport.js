@@ -10,9 +10,9 @@ passport.deserializeUser(function (user, done) {
 });
 
 passport.use(new GoogleStrategy({
-    clientID: "597553148438-d05anlgbker7qtqrlcvgeqn2oqjpre1q.apps.googleusercontent.com", // Your Credentials here.
-    clientSecret: "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", // Your Credentials here.
-    callbackURL: "http://localhost:4000/auth/callback",
+    clientID: "835466892579-q56868hjgcl85bml2blc7p80bio69ajo.apps.googleusercontent.com", // Your Credentials here.
+    clientSecret: "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", // Your Credentials here.
+    callbackURL: "http://localhost:3000/auth/callback",
     passReqToCallback: true
 },
     function (request, accessToken, refreshToken, profile, done) {
