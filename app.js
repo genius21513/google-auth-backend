@@ -42,6 +42,8 @@ app.get('/auth/callback/failure', (req, res) => {
     res.send("Error");
 })
 
+console.log(process.env.NODE_ENV);
+
 app.listen(3000, () => {
     console.log("Server Running on port 3000");
 });
